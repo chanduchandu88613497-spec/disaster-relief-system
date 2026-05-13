@@ -1,0 +1,135 @@
+.panel {
+  padding: var(--space-xl);
+  overflow-y: auto;
+  height: 100%;
+}
+
+.panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-lg);
+}
+
+.panel__title {
+  font-size: var(--font-xl);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-xs);
+}
+
+.panel__subtitle {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+.panel__filters {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.panel__filters .input {
+  max-width: 220px;
+}
+
+.panel__table-wrapper {
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  overflow: auto;
+  max-height: calc(100vh - 300px);
+  background: var(--bg-card);
+}
+
+.td-primary {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+}
+
+.td-muted {
+  font-size: var(--font-xs) !important;
+  color: var(--text-muted) !important;
+}
+
+.td-quantity {
+  font-weight: 600;
+  color: var(--text-primary) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.td-quantity--zero {
+  color: var(--accent-red) !important;
+}
+
+.quantity-alert {
+  margin-left: 6px;
+}
+
+/* ── Bulk Modal ── */
+.bulk-modal__desc {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.bulk-modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: var(--space-lg);
+}
+
+.bulk-modal__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-glass);
+}
+
+.bulk-modal__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bulk-modal__item-name {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.bulk-modal__item-center {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+.bulk-modal__item-input {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.bulk-modal__item-current {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.bulk-modal__item-input .input {
+  width: 100px;
+  text-align: right;
+}
+
+.bulk-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+}

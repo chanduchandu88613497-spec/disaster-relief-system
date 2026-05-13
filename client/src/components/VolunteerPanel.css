@@ -1,0 +1,48 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skill-tag {
+  padding: 2px 8px;
+  font-size: var(--font-xs);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.action-btns {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+/* ── Dispatch Form ── */
+.dispatch-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.dispatch-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.dispatch-form__label {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.dispatch-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}

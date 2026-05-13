@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.app__main {
+  flex: 1;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
